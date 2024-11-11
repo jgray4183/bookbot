@@ -1,11 +1,10 @@
-input = "books/frankenstein.txt"
+input = "books/dracular.txt"
 
 with open(f"{input}") as f:
     file_contents = f.read()
 
 def main(book):
     letter_count = characters_decending(count_characters(book))
-    print (letter_count)
     print (f"--- Begin report for {input} ---")
     print (f"{count_words(book)} words fount in the docuemnt\n")
     for letter in letter_count:
